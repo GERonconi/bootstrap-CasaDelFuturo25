@@ -1,0 +1,181 @@
+<div class="content-page">
+
+    <h1 style="-webkit-text-fill-color: rgb(35, 22, 216); text-shadow: 8px 12px 6px rgb(34, 233, 18);">
+        1. Menú desplegable y Navegación avanzada
+    </h1>
+
+    <h3 class="text-start ms-2">
+        1.1 Dropdowns ( Menú desplegables)
+    </h3>
+
+    <p class="text-start ms-3">
+        Uso básico:
+    </p>
+
+    <div class="container mb-3 p-3" style="border: 2px solid rgb(38, 136, 43)">
+
+        <div class="dropdown">
+
+            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                Menú
+            </button>
+
+            <ul class="dropdown-menu">
+                
+                <li>
+                    <a class="dropdown-item" href="#">Opción 1</a>
+                </li>
+                
+                <li>
+                    <a class="dropdown-item" href="#">Opción 2</a>
+                </li>
+                
+                <li>
+                    <hr Class="dropdown-divider">
+                </li>
+                
+                <li>
+                    <a class="dropdown-item" href="#">Opción 3</a>
+                </li>
+
+            </ul>
+
+        </div>
+        
+    </div>
+
+    <p class="text-start ms-3">
+        Clases útiles:
+    </p>
+
+    <ul class="text-start">
+
+        <li>
+            <b>
+                dropdown-menu-end:
+            </b>
+            <p class="ms-3">
+                Alinea el menú al lado derecho.
+            </p>
+        </li>
+
+        <div class="container mb-3 p-3 text-center" style="border: 2px solid rgb(38, 136, 43)">
+
+            <p class="text-start">
+                Prueba de dropdown-menu-end:
+            </p>
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                    Menú
+                </button>
+                <ul class="dropdown-menu dropdown-menu-end">
+                    <li><a class="dropdown-item" href="#">Opción 1</a></li>
+                    <li><a class="dropdown-item" href="#">Opción 2</a></li>
+                </ul>
+            </div>
+
+            <p class="text-start mt-2">
+                Prueba sin dropdown-menu-end:
+            </p>
+    
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                    Menú
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Opción 1</a></li>
+                    <li><a class="dropdown-item" href="#">Opción 2</a></li>
+                </ul>
+            </div>
+
+            <p class="text-start pt-2">
+                Prueba con dropdown-menu-start:
+            </p>
+
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                    Menú
+                </button>
+                <ul class="dropdown-menu dropdown-menu-start">
+                    <li><a class="dropdown-item" href="#">Opción 1</a></li>
+                    <li><a class="dropdown-item" href="#">Opción 2</a></li>
+                </ul>
+            </div>
+        </div>    
+
+        <li>
+            <b>
+                dropdown-item:
+            </b>
+            <p class="ms-3">
+                Da formato a los elementos del menú.
+            </p>
+        </li>
+
+    </ul>
+
+    <h3 class="text-start ms-3">
+        1.2 Navegación avanzada
+    </h3>
+
+    <p>
+        Barra de navegación con dropdowns:
+    </p>
+
+    
+    <div class="container mb-3 p-3" style="border: 2px solid rgb(38, 136, 43)">
+        
+        <nav class="navbar navbar-expand-lg lavbar-light bg-light">
+
+            <div class="container-fluid">
+
+                <a class="navbar-brand" href="#">
+                    Mi Sitio
+                </a>
+
+                <button class="navbar-toggle" type="button" data-bs-toggle="#navbarNav">
+
+                    <span class="navbar-toggler-icon"></span>
+
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+
+                    <ul class="navbar-nav">
+
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">
+                                Inicio
+                            </a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown">
+                                Servicios
+                            </a>
+
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a class="dropdown-item" href="#">
+                                        Servicio 1
+                                    </a>
+                                </li>
+                                
+                                <li>
+                                    <a class="dropdown-item" href="#">
+                                        Servicio 2
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+
+                    </ul>
+
+                </div>
+            </div>
+
+        </nav>
+
+    </div>
+
+</div>
