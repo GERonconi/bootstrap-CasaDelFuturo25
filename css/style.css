@@ -1,0 +1,10 @@
+.section {
+        padding-top: 120px; /* Ajusta según tu offset */
+        margin-top: -100px;  /* Ajusta según sea necesario */
+    }
+
+    /* Para asegurar que el menú lateral tenga altura suficiente */
+    .scrollspy-nav {
+        height: 100vh; /* Ocupa toda la altura de la pantalla */
+        overflow-y: auto; /* Permite desplazarse si el contenido es largo */
+    }

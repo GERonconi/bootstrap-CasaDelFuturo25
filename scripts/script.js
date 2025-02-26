@@ -52,3 +52,27 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
+// se agrega contenido de clases/clase2.html
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        var scrollSpy = new bootstrap.ScrollSpy(document.body, {
+            target: "#navbar-clase2", // Asegúrate de que coincide con tu `nav`
+            offset: 100
+        });
+    });
+</script>
+
+<script>
+
+    function loadHTML (id, file) {
+        console.log(`Intentando cargar: ${file} en ${id}`);
+        fetch(file)
+            .then(response => response.text())
+            .then(data => {console.log("Carga exitosa", data);
+            document.getElementById(id).innerHTML = data;
+            })
+            .catch(err => console.log("Error en fetch:", err));
+    }
+
+</script>
